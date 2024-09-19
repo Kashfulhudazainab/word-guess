@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -126,3 +126,171 @@ body {
         padding: 10px 0; /* Reduce button padding */
     }
 }
+
+
+.content .keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.keyboard .key-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(22, 128, 128);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: rgb(191, 225, 225);
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 450px;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wrapper h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.wrapper .content {
+    margin: 20px 0;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.inputs input {
+    width: 56px;
+    height: 56px;
+    margin: 4px;
+    font-size: 25px;
+    border: 3px solid rgb(191, 225, 225);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(216, 149, 67);
+}
+
+.details p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    padding: 15px 0;
+    cursor: pointer;
+    color: #272525;
+    border-radius: 5px;
+    background-color: rgb(136, 237, 237);
+    margin: 10px 0;
+}
+
+/* Keyboard Styles */
+.keyboard {
+    display: flex;
+    width:70%;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: aqua;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(28, 220, 220);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: rgb(191, 225, 225);
+    color: black;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        margin: 10px;
+    }
+
+    .wrapper h1 {
+        font-size: 1.3rem;
+    }
+
+    .inputs input {
+        width: 45px;
+        font-size: 20px;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .reset-btn {
+        font-size: 15px;
+    }
+
+    .key {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
